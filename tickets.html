@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tickets</title>
+    <link rel="stylesheet" href="Css/stylesheet.css">
+</head>
+<body>
+    
+<header>
+        <img src="bilder/header-image.jpg" alt="">
+        <div class="festival-text">
+            <div class="festival-name">Queen of Trondheim</div>
+            <div class="festival-slogan">The show must go on</div>
+        </div>
+        <nav>
+            <button class="menu-button"  command="show-modal" commandfor="menu">|||</button>
+            <dialog closedby="any" id="menu">
+                <button class="close-button" commandfor="menu" command="close">X</button>
+                <ul class="menu-list">
+                    <li>
+                        <a class="menu-list-item" href="program.html">Program</a>
+                    </li>
+                    <li>
+                        <a class="menu-list-item" href="tickets.html">Billeter</a>
+                    </li>
+                    <li>
+                        <a class="menu-list-item" href="Index.html">Hjem</a>
+                    </li>
+                </ul>
+            </dialog>
+        </nav>
+    </header>
+<main>
+    <template id="ticket-template">
+        <div class="selected-ticket">
+            <div class="ticket-name"></div>
+            <div class="ticket-price"></div>
+        </div>
+    </template> 
+    <h1>Billetkjøp</h1>
+    <div class="selected-tickets">
+       <h2>Dine billeter</h2>
+        <div id="selected-tickets">
+            <!--valgte billeter havner her-->
+        </div>
+        <button id="kjopt-billet" disabled command="show-modal" commandfor="kjøpt-billet">Kjøp valgte billeter</button>  
+        <dialog class="kjøpt-billet-dialog" id="kjøpt-billet">
+            
+            <h1>Takk for kjøpet!</h1>
+            <button id="lukk-knapp" commandfor="kjøpt-billet" command="close">Lukk</button>
+        </dialog>  
+    </div>
+        
+     <h2>Velg billeter</h2>
+    <form id="ticket-form">
+        <select class="select-bands" name="select-bands" id="select-bands">
+        </select>
+        <button class="choose-ticket-buton" type="submit">Choose ticket</button>
+    </form>
+</main>
+  <footer>
+    Dette er en fiktiv musikkfestival.
+    bandene er fiktive hyllestband.
+    <a href="kilder.html">Kilder</a>
+  </footer>
+<script src="script/tickets.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+:root {
+    --bg-color: #171717;
+    --accent-color: #6D1727;
+    --highlights: #D4AF70;
+    --main-text-color: #E8DFD0;
+    --secondary-elements: #77716D;
+}
+
+
+* {
+    margin: 0;
+}
+
+a {
+    color: var(--highlights);   
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Garamond;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header, footer {
+    background-color: var(--accent-color);        
+    color: var(--highlights);
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+header {
+    position: relative;
+    padding: 0;
+
+    img {
+        display: block;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
+        height: 30rem;
+    }
+    .festival-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-shadow: 3px 3px 3px var(--secondary-elements);
+    
+        .festival-name {
+            font-size: 5rem;
+
+        
+        }
+        .festival-slogan {
+            font-size: 2rem;
+        }
+    }
+    nav {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+footer{
+    font-size: 1rem;
+}
+
+nav {
+    font-size: 50%;
+    font-weight: bold;
+
+     .menu-button {
+        background-color: transparent;
+        border: none;
+        padding: 1rem;
+        border-radius: 0.2rem;
+        color:var(--highlights);
+        text-decoration: none; 
+        rotate: 90deg;  
+        anchor-name: --menu-trigger;
+        
+    }
+
+    dialog {
+        margin: 0;
+        padding: 2rem;
+        min-width: 12rem;
+        min-height: 20rem;
+        inset: auto;
+        position-anchor: --menu-trigger;
+        position-area: bottom;
+        position-try-fallbacks: flip-block;
+        background-color: var(--highlights);
+
+        .close-button {
+              padding: 0.25rem 0.5rem;
+              background: var(--highlights);
+              border: 3px solid var(--accent-color);
+              border-radius: 0.5rem;
+              display: inline;
+              width: auto;
+              position: absolute;
+              right: 3%;
+              top: -0.2rem;
+        }
+
+        .menu-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu-list-item {
+            background-color: var(--secondary-elements);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            display: block;
+            margin-bottom: 0.25rem;
+            margin-top: 0.25rem;
+            text-decoration: none;
+            color: var(--highlights);
+        }
+    }
+}
+
+button {
+  margin-top: 0.5rem;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: var(--highlights);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.selected-tickets {
+    margin-bottom: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+main {
+    margin-inline: auto;
+    padding: 1rem;
+    color: var(--main-text-color);
+}
+
+.program {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.bands {
+    height: 20rem;
+
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.5rem;
+    }
+
+
+}
+
+.program-band {
+
+    height: 30rem;
+    max-width: 75rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    border: 3px solid var(--accent-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    
+    
+    img {
+        max-width: 55rem;
+        max-height: 55rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.5rem;
+    }
+
+   
+    .program-text {
+        font-size: 1.5rem;
+        text-align: center;
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .program-detail {
+            font-size: 2rem;
+            
+        }
+
+        a {
+            margin-top: 1rem;
+        }
+    }
+
+}
+
+
+.buy-ticket-button {
+    display: block;
+    background-color: var(--secondary-elements);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.buy-ticket-button:hover {
+    background-color: #3d3a38;
+}
+
+.kjøpt-billet-dialog {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+.Spesific-band-info {
+    max-width: 30rem;
+    text-align: center;
+    padding: 1.5rem;
+
+    p {
+        font-size: 1.5rem;
+        color: var(--main-text-color);
+        text-align: left;
+        margin-bottom: 2.5rem;
+    }
+       
+    img {
+        max-width: 30rem;
+        max-height: 30rem;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.5rem;
+        margin-inline: auto;
+        margin-bottom: 1rem;
+    }
+
+    .concert-details {
+        font-size: 2rem
+    }
+}
+
+footer {
+    margin-top: auto;
+}
+
+.select-bands {
+display: block;
+min-width: 15rem;
+padding: 1rem;
+background-color: var(--secondary-elements);
+color: var(--main-text-color);
+font-size: 1.25rem; 
+font-family: garamond;
+border-radius: 0.5rem;
+}
+
+.selected-ticket {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}

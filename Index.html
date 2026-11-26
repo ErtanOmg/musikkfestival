@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musikk festival</title>
+    <link rel="stylesheet" href="Css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <img src="bilder/header-image.jpg" alt="">
+        <div class="festival-text">
+            <div class="festival-name">Queen of Trondheim</div>
+            <div class="festival-slogan">The show must go on</div>
+        </div>
+        <nav>
+            <button class="menu-button"  command="show-modal" commandfor="menu">|||</button>
+            <dialog closedby="any" id="menu">
+                <button class="close-button" commandfor="menu" command="close">X</button>
+                <ul class="menu-list">
+                    <li>
+                        <a class="menu-list-item" href="program.html">Program</a>
+                    </li>
+                    <li>
+                        <a class="menu-list-item" href="tickets.html">Biletter</a>
+                    </li>
+                    <li>
+                        <a class="menu-list-item" href="Index.html">Hjem</a>
+                    </li>
+                </ul>
+            </dialog>
+        </nav>
+    </header>
+<main>
+<section class="program">
+    <div class="bands">
+        <img href="Band-programs/baklandet.html" src="bilder/Baklandet-Bites-the-Dust-Logo.png" alt="">
+        <a href="Band-programs/baklandet.html">Lær mer om bandet!</a>
+    </div>
+
+    <div class="bands">
+        <img src="bilder/Bohemian-Ranheim-Logo.png" alt="">
+        <a href="Band-programs/Ranheim.html">Lær mer om bandet!</a>
+    </div>
+
+    <div class="bands">
+        <img href="Band-programs/gloshaugen.html" src="bilder/Crowned-Radio-Gløshaugen.png" alt="">
+        <a href="Band-programs/gloshaugen.html">Lær mer om bandet!</a>
+    </div>
+
+    <div class="bands">
+        <img href="Band-programs/lade-boy.html" src="bilder/Good-Old-Fashioned-Lade-Boy.png" alt="">
+        <a href="Band-programs/lade-boy.html">Lær mer om bandet!</a>
+    </div>
+</section>
+</main>
+   <footer>
+    Dette er en fiktiv musikkfestival.
+    bandene er fiktive hyllestband.
+    <a href="kilder.html">Kilder</a>
+  </footer>   
+    <script src="script/javascript.js"></script>
+</body>
+</html>

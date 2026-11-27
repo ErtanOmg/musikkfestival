@@ -162,9 +162,15 @@ main {
 
 .program {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 1rem;
+}
+
+@media screen and (min-width: 990px) {
+    .program {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .bands {
@@ -201,6 +207,7 @@ main {
         object-fit: cover;
         display: block;
         border-radius: 0.5rem;
+        }
     }
 
    
@@ -223,7 +230,7 @@ main {
         }
     }
 
-}
+
 
 
 .buy-ticket-button {

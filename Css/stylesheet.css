@@ -272,6 +272,16 @@ main {
     }
 }
 
+.kilder-side {
+    max-width: 30rem;
+
+    p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
 footer {
     margin-top: auto;
 }
